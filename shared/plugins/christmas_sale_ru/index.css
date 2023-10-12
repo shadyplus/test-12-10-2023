@@ -1,0 +1,46 @@
+@font-face {
+	font-family: "CenturyGothic";
+	src: url("Century Gothic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: bold;
+}
+
+.christmas-sale-banner{
+	position: fixed;
+	top: 0;
+	z-index: 100000;
+	width: 100%;
+	height: 80px;
+	background-image: url(banner_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #ff0030;
+	display: flex;
+	align-items: center;
+}
+.christmas-sale-banner__container{
+	width: 1040px;
+	margin: auto;
+}
+
+.christmas-sale-banner_text{
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	font-family: 'CenturyGothic';
+	margin: 0;
+	text-shadow: 0px 8px 13px rgba(56, 2, 13, 0.74);
+}
+
+
+@media (max-width: 560px){
+	.christmas-sale-banner_text{
+		font-size: 30px;
+	}
+}
+@media (max-width: 400px){
+	.christmas-sale-banner_text{
+		font-size: 25px;
+	}
+}

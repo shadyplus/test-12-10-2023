@@ -1,0 +1,53 @@
+.corona-body {
+  margin-top: 54px !important;
+}
+
+.corona-wrapper {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #4F9356;
+  padding: 5px 15px;
+  box-sizing: border-box;
+  z-index: 999;
+}
+
+
+.corona-wrapper>div {
+  background: url(logo.png) no-repeat;
+  background-position: center left 0px;
+  max-width: 1020px;
+  margin: 0 auto;
+  padding-left: 60px;
+  box-sizing: border-box;
+}
+
+.corona-wrapper p {
+  color: #fff;
+  text-align: center;
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.corona-wrapper p:first-of-type {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.corona-wrapper-close {
+  display: block;
+  width: 40px;
+  height: 40px;
+  color: #000000;
+  font-size: 24px;
+  line-height: 100%;
+  position: absolute;
+  right: 5px;
+  text-align: right;
+  font-weight: bold;
+}

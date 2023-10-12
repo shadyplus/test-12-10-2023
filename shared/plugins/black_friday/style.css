@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('CenturyGothic-Bold.eot');
+    src: local('Century Gothic Bold'), local('CenturyGothic-Bold'),
+        url('CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CenturyGothic-Bold.woff') format('woff'),
+        url('CenturyGothic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.black_friday__body {
+    margin-top: 80px !important;
+}
+
+.black_friday__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 80px;
+    box-sizing: border-box;
+    z-index: 1000;
+    background: black url('black_friday_background.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.black_friday__content {
+    display: flex;
+    color: white;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    height: 80px;
+    max-width: 1100px;
+    margin: auto;
+    align-items: center;
+}
+
+.black_friday__startdate {
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 720px;
+}
+
+@media (max-width: 1030px) {
+    .black_friday__content {
+        max-width: 730px;
+    }
+
+    .black_friday__startdate {
+        margin-left: 440px;
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 720px) {
+    .black_friday__body {
+        margin-top: 60px !important;
+    }
+
+    .black_friday__container {
+        min-height: 60px;
+    }
+
+    .black_friday__content {
+        height: 60px;
+        background-size: cover;
+        max-width: 550px;
+    }
+
+    .black_friday__startdate {
+        font-size: 34px;
+        margin-left: 325px;
+    }
+}
+
+@media (max-width: 560px) {
+    .black_friday__body {
+        margin-top: 50px !important;
+    }
+
+    .black_friday__container {
+        min-height: 50px;
+    }
+
+    .black_friday__content {
+        height: 50px;
+    }
+
+    .black_friday__startdate {
+        margin-left: 265px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 460px) {
+    .black_friday__content {
+        background-position: -45px 0;
+    }
+
+    .black_friday__startdate {
+        margin-left: 220px;
+    }
+}
+
+@media (max-width: 410px) {
+    .black_friday__startdate {
+        font-size: 24px;
+    }
+}
+
+.black_friday__close {
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    line-height: 100%;
+    position: absolute;
+    right: 5px;
+    text-align: right;
+    font-weight: bold;
+}

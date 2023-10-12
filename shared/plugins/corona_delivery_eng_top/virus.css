@@ -1,0 +1,159 @@
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-top: 14px !important;
+}
+
+.covid19-body {
+    margin-top: 94px !important;
+}
+
+.covid19-widget > * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+.covid19-widget {
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.2;
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding: 15px 25px 5px 25px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 28px 24px rgba(0, 0, 0, 0.16);
+    background: #fff;
+    display: table;
+    -ms-transition: .3s;
+    transition: .3s;
+    z-index: 100 !important;
+    top: 0;
+    transform: translateY(-100%);
+    min-height: 79px;
+}
+
+.covid19-widget::after {
+    content: "";
+    background: #fff;
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}
+
+
+.covid19-widget.opened {
+    transform: translateY(0);
+
+}
+
+.covid19-widget__cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.covid19-widget__img img {
+    display: block;
+    margin: 0;
+}
+
+.covid19-widget__name {
+    color: #FF0000;
+    white-space: nowrap;
+    position: relative;
+    padding-left: 90px;
+}
+
+.covid19-widget__name::before {
+    content: "";
+    width: 79px;
+    height: 79px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: url('virus.png') no-repeat;
+}
+
+.covid19-widget__text {
+    padding-left: 40px;
+}
+
+.covid19-widget__btn {
+    position: absolute;
+    left: 50%;
+    bottom: -27px;
+    width: 24px;
+    height: 24px;
+    background: #686868;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 16px;
+    cursor: pointer;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+.covid19-widget__btn img {
+    display: inline-block;
+}
+
+.covid19-widget__btn.opened {
+    transform: translateX(-50%) rotate(180deg);
+    line-height: 17px;
+}
+
+@media (max-width: 991px) {
+    .covid19-widget {
+        font-size: 16px;
+        display: block;
+        padding-bottom: 0;
+    }
+
+
+    .covid19-widget__text {
+        padding-bottom: 10px;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .covid19-widget__name {
+        font-size: 24px;
+        display: block;
+        max-width: 210px;
+        margin: auto;
+        padding-left: 55px;
+        margin-bottom: 10px;
+    }
+
+    .covid19-widget__name::before {
+        width: 49px;
+        height: 49px;
+        background-size: contain;
+    }
+
+    .covid19-widget__btn {
+        line-height: 23px;
+    }
+
+    .covid19-widget__btn.opened {
+        line-height: 23px;
+    }
+}
+
+
+ }

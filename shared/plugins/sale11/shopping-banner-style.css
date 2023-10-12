@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('CenturyGothic-Bold.eot');
+    src: local('Century Gothic Bold'), local('CenturyGothic-Bold'),
+        url('CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CenturyGothic-Bold.woff') format('woff'),
+        url('CenturyGothic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.sale-body {
+    margin-top: 80px !important;
+}
+
+.shopping-day__banner{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #202020 url('shopping-day.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    z-index: 100000;
+    min-height: 80px;
+}
+.shopping-day__wrapper{
+    display: flex;
+    color: #fff;
+    font-family: 'Century Gothic'; font-weight: bold;
+    position: relative;
+    height: 80px;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+.shopping-day__title{
+    font-size: 24px;
+    font-weight: bold;
+    align-self: center;
+    left: 440px;
+    padding-left: 20px;
+
+}
+.shopping-day__startdate{
+    font-size: 50px;
+    line-height: 77px;
+    font-weight: bold;text-align: center;
+    background: url(circle.png);
+    background-repeat: no-repeat;
+    background-position: center -82px;
+    background-size: 300px;
+    width: 300px;
+    height: 80px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.shopping-day__enddate{
+    font-size: 25px;
+    font-weight: bold;
+    color: #171269;
+    z-index: 100;
+    margin-top: 40px;
+    -webkit-transform: rotate(5deg); 
+    -moz-transform: rotate(5deg);
+}
+.shopping-day__text{
+    font-size: 26px;
+    font-weight: bold;
+    background: url(button.png);
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-size: 300px;
+    width: 300px;
+    height: 80px;
+    z-index: 100;
+    margin-left: -70px;
+}
+.shopping-day__text-span{
+    display: block;
+    -webkit-transform: rotate(7deg); 
+    -moz-transform: rotate(7deg);   
+    margin-left: 64px;
+    padding-top: 10px;
+}
+.shopping-day__banner-mobile{
+    display: none;
+}
+@media (max-width: 1040px){
+    .shopping-day__wrapper {
+        width: 500px;
+    }
+    .shopping-day__title,
+    .shopping-day__enddate,
+    .shopping-day__text,
+    .shopping-day__text-span{
+        display: none;
+    }
+    .shopping-day__title-mobile,
+    .shopping-day__enddate-mobile,
+    .shopping-day__text-mobile,
+    .shopping-day__text-mobile span{
+        display: block;
+    }
+    .shopping-day__banner-mobile{
+        display: block;
+    }
+    .shopping-day__startdate {
+        width: 245px;
+        background-position: center -62px;
+        background-size: 230px;
+        font-size: 36px;
+        line-height: 74px;
+    }
+    .shopping-day__title-mobile,
+    .shopping-day__text-mobile{
+        font-size: 16px;
+        font-weight: bold;text-align: center;
+        padding: 0px 15px;
+    }
+    .shopping-day__title-mobile{
+        padding-top: 5px;
+    }
+
+    .shopping-day__enddate-mobile{
+        text-align: center;
+        padding: 0px 15px;
+        color: #171269;
+    }
+}
+
+@media (max-width: 480px){
+    .shopping-day__startdate {
+        width: 186px;
+    }
+    .shopping-day__wrapper{
+        width: 320px;
+    }
+    .shopping-day__title-mobile,
+    .shopping-day__enddate-mobile,
+    .shopping-day__text-mobile,
+    .shopping-day__text-mobile span{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .shopping-day__startdate {
+        width: 162px;
+        background-position: center -36px;
+        background-size: 160px;
+    }
+}

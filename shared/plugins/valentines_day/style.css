@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'SFProDisplay-Heavy';
+    src: url('SFProDisplay-Heavy.ttf') format('truetype');
+}
+
+.valentines_day__body {
+    margin-top: 80px !important;
+}
+
+.valentines_day__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    z-index: 1000;
+    background: #318ef7 url('background_desctop.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.valentines_day__close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1001;
+    color: white;
+    padding-right: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.valentines_day__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 1100px;
+    margin: auto;
+    height: 80px;
+
+    background: url('picture_desctop.png') no-repeat;
+    background-position: center;
+
+    color: white;
+    font-family: 'SFProDisplay-Heavy';
+    font-size: 32px;
+    line-height: normal;
+    font-weight: bold;
+}
+
+@media (max-width: 750px) {
+    .valentines_day__body {
+        margin-top: 60px !important;
+    }
+
+    .valentines_day__container {
+        height: 60px;
+        background: #318ef7 url('background_mobile.png') no-repeat;
+        background-size: cover;
+    }
+
+    .valentines_day__content {
+        background: url('picture_mobile_left.png'), url('picture_mobile_right.png');
+        background-position: left, right;
+        background-repeat: no-repeat;
+        font-size: 20px;
+        height: 60px;
+        row-gap: 2px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .valentines_day__content {
+        font-size: 18.5px;
+    }
+}
+
+@media (max-width: 450px) {
+    .valentines_day__content {
+        background-position: -30px, calc(100% + 30px);
+    }
+}
+
+@media (max-width: 390px) {
+    .valentines_day__content {
+        background-position: -60px, calc(100% + 60px);
+    }
+}
